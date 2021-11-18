@@ -1,6 +1,4 @@
 //This JS provides functions for pseudo-functionality for certain kinds of buttons.
-// Switch statements: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
-// setTimeout: https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
 
 
 function confirmDelete(event_name, event_id, redirect_to){
@@ -20,7 +18,7 @@ function toggleInterest(interestButton, event_id){
         interestButton.classList.replace("scale-in", "scale-out");
         
         //Send update to server, wait for confirmation before showing on button
-        //Simulate waiting with a timeout for now...
+        //Simulate waiting with timeout for now...
         setTimeout(function(){
             interestButtonIcon.textContent = "star";
             interestButton.classList.replace("blue", "yellow");
@@ -33,7 +31,7 @@ function toggleInterest(interestButton, event_id){
         interestButton.classList.replace("scale-in", "scale-out");
 
         //Send update to server, wait for confirmation before showing on button
-        //Simulate waiting with a timeout for now...
+        //Simulate waiting with timeout for now...
         setTimeout(function(){
             interestButtonIcon.textContent = "star_border";
             interestButton.classList.replace("yellow", "blue");

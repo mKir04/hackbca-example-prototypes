@@ -34,3 +34,8 @@ nav .btn:hover, .sidenav .btn:hover{
     background-color: #1e88e5; 
 }
 
+.material-icons {
+   vertical-align: text-bottom;
+   display: inline-flex;
+}
+
