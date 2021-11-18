@@ -38,6 +38,60 @@
         </ul>
     </header>
 
+    <main>
+
+        <form id="create_update_project" method="post" action="/project">
+            <!-- action and method depend on C vs U-->
+            <input type="hidden" name="project_id" id="project_id" value="0">
+            <!-- server sets project_id value-->
+
+            <div class="container">
+                <div class="card grey lighten-4">
+                    <div class="card-content">
+
+            <span class="card-title">
+              <h1>Create New / Modify Project</h1>
+            </span>
+
+
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" id="project_name" class="validate" data-length="32" required>
+                                <label for="project_name">Project Name</label>
+
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="text" id="project_members" class="validate" placeholder="separate by comma"required>
+                                <label for="project_name">Project Members</label>
+                            </div>
+                        </div>
+
+                        <!-- https://materializecss.com/select.html -->
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" id="project_tech_stack" class="validate" placeholder="separate by comma"required>
+                                <label for="project_tech_stack">Tech Stack</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="project_description" class="materialize-textarea" data-length="500"></textarea>
+                                <label for="project_description">Description</label>
+                            </div>
+                        </div>
+
+                        <div class="button_wrapper">
+                            <button class="submit waves-effect waves-light btn" type="submit">Create</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </main>
+
     <script src="/js/event_utils.js"></script>
 
     <!-- Compiled and minified JavaScript -->
